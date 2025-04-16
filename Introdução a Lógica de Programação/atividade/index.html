@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de adivinhação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jogo de adivinhação</h1>
+      <p>
+        • O jogo irá sortear um número aleatório entre
+        <strong>1 e 100</strong>.<br />
+        • Seu objetivo é descobrir qual é esse número em até
+        <strong>10 tentativas</strong>!<br />
+        • A cada tentativa, receberá a dica se é <strong>maior ou menor</strong> que seu chute. <br /><br />
+        Você ganha se conseguir acertar o número secreto!
+      </p>
+    </header>
+    <main>
+      <label for="chute">Qual seu chute?</label>
+      <input type="number" id="chute" min="1" max="100" />
+
+      <button onclick="verificarChute()">Chutar</button>
+
+      <p id="resultado"></p>
+      <p id="numeroTentativas"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
