@@ -38,7 +38,7 @@ class Moto extends Veiculo {
 
 class Carro extends Veiculo {
   constructor(marca, modelo, ano, numeroPostas) {
-    super(marca, modelo, ano)
+    super(marca, modelo, ano);
     this.numeroPostas = numeroPostas;
   }
 
@@ -48,11 +48,10 @@ class Carro extends Veiculo {
 }
 
 const carro = new Carro("Honda", "Civic", 2025, 4);
-const moto = new Moto("Yamaha", "MT-07", 2025); 
+const moto = new Moto("Yamaha", "MT-07", 2025);
 
 carro.ligar();
 carro.desligar();
 carro.abrirPortas();
 
 console.log("O carro está ligado?", carro.ligado);
-

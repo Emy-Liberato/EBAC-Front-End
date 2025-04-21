@@ -9,20 +9,20 @@ class Parquimetro {
     if (this.valor < 1) {
       resultado.innerHTML = "Valor insuficiente";
     } else if (this.valor >= 3) {
-      let calculo = this.valor - 3
-        resultado.innerHTML = `Você tem 120 minutos para utilizar, e seu troco é de ${
-        calculo.toFixed(2)
-      }`;
+      let calculo = this.valor - 3;
+      resultado.innerHTML = `Você tem 120 minutos para utilizar, e seu troco é de ${calculo.toFixed(
+        2
+      )}`;
     } else if (this.valor >= 1.75) {
-        let calculo = this.valor - 1.75;
-      resultado.innerHTML = `Você tem 60 minutos para utilizar, e seu troco é de ${
-        calculo.toFixed(2)
-      }`;
+      let calculo = this.valor - 1.75;
+      resultado.innerHTML = `Você tem 60 minutos para utilizar, e seu troco é de ${calculo.toFixed(
+        2
+      )}`;
     } else if (this.valor >= 1) {
-        let calculo = this.valor - 1;
-      resultado.innerHTML = `Você tem 30 minutos para utilizar, e seu troco é de ${
-        calculo.toFixed(2)
-      }`;
+      let calculo = this.valor - 1;
+      resultado.innerHTML = `Você tem 30 minutos para utilizar, e seu troco é de ${calculo.toFixed(
+        2
+      )}`;
     }
   }
 }
