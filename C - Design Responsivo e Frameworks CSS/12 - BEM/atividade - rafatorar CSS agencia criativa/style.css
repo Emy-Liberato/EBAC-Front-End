@@ -1,60 +1,33 @@
-/* RESET BÁSICO */
-
-.title{
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #613f86;
-}
-
-section {
-  padding: 4rem 2rem;
-}
-
-.menu__link {
-  margin-bottom: 0.5rem;
-}
-
-/* HEADER / NAV */
-header {
-  background-color: #1e1e1e;
-  color: #fff;
+/* NAV */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
   width: 100%;
 }
 
-.menu__hamburguer {
-  display: inline-block;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-}
-
-.menu__hamburguer i {
-  cursor: pointer;
-}
-
-.logo img {
+.header__logo {
   width: 9.8rem;
 }
 
-nav {
-  display: none;
+.header__hamburguer {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-nav ul {
+.menu {
   list-style: none;
-  display: flex;
+  display: none;
   gap: 1.5rem;
 }
 
-nav a {
+.menu__link {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
 /* BANNER */
@@ -68,42 +41,57 @@ nav a {
 
 .banner__image {
   width: 20%;
+  max-width: 9rem;
   margin: auto;
   padding-bottom: 1.5rem;
 }
 
-.banner p {
-  font-size: 1rem;
+/* SOBRE */
+.sobre__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre__item {
+  display: inline;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  list-style: none;
+  border: solid 3px #9569c5;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
 }
 
 /* SERVIÇOS */
-.grid-servicos {
+.servicos__grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.servico {
-  background-color: #fff;
+.servicos__cards {
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #2811403d;
   text-align: center;
   font-weight: 600;
 }
 
-.servico h3 {
+.servicos__title {
   font-weight: 700;
   padding-bottom: 1rem;
 }
 
-.servico p {
+.servicos__text {
   text-align: left;
 }
 
 /* DEPOIMENTOS */
-blockquote {
+
+.depoimentos__line {
   background: #fff;
   border-left: 4px solid #613f86;
   padding: 1rem 1.5rem;
@@ -111,7 +99,7 @@ blockquote {
   font-style: italic;
 }
 
-cite {
+.depoimentos__client {
   display: block;
   margin-top: 0.5rem;
   font-style: normal;
@@ -119,23 +107,27 @@ cite {
 }
 
 /* CONTATO */
-form {
+.contato__text {
+  margin-bottom: 1rem;
+}
+
+.contato__form {
   max-width: 600px;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: auto;
 }
 
-input,
-textarea {
+.contato__input {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
 }
 
-button {
+.contato__button {
   background-color: #613f86;
   color: white;
   padding: 0.75rem;
@@ -146,12 +138,12 @@ button {
   transition: background 0.3s;
 }
 
-button:hover {
+.contato__button:hover {
   background-color: #9569c5;
 }
 
 /* FOOTER */
-footer {
+.footer {
   text-align: center;
   padding: 2rem;
   background-color: #1e1e1e;
@@ -159,75 +151,37 @@ footer {
   width: 100%;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: left;
+  justify-content: center;
 }
 
-.footer-container > div {
-  margin-top: 1.5rem;
-}
-
-.footer-container img {
+.footer__logo {
   width: 15%;
   max-width: 90px;
   margin-right: 1rem;
 }
 
 @media (min-width: 768px) {
-  nav {
-    display: block;
-  }
-
-  .menu__hamburguer {
+  .header__hamburguer {
     display: none;
   }
 
   .menu {
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
   }
 
-  .banner img {
-    width: 200px;
-  }
-
-  .banner__title {
-    font-size: 2.5rem;
-  }
-
-  .banner__subtitle{
-    font-size: 1.25rem;
-  }
-
-  section {
-    padding: 5rem 4rem;
-  }
-
-  .grid-servicos {
+  .servicos__grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  form {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-container img {
-    width: 10%;
   }
 }
 
 @media (min-width: 1024px) {
-  .grid-servicos {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .banner__image{
-    width: 10%;
+  .sobre__list {
+    flex-direction: row;
+    gap: 1rem;
   }
 
   .banner__title {
@@ -238,12 +192,17 @@ footer {
     font-size: 1.4rem;
   }
 
-  section {
-    margin: 0 auto;
-    padding: 4rem 10rem;
+  .banner__image {
+    width: 9%;
   }
 
-  form {
+  .contato__form {
     max-width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .servicos__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

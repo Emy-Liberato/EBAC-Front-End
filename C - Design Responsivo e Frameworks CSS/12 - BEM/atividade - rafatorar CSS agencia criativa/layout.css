@@ -12,11 +12,32 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  background-color: #1e1e1e;
+  padding: 1.5rem 3rem;
+}
+
+.title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #613f86;
+}
+
 section {
   padding: 4rem 2rem;
 }
 
-header {
+footer {
+  text-align: center;
+  padding: 2rem;
   background-color: #1e1e1e;
-  padding: 1.5rem 3rem;
+  color: white;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin: 0 auto;
+    padding: 4rem 10rem;
+  }
 }
