@@ -1,0 +1,19 @@
+@use "variaveis";
+
+.conteudo {
+  padding: variaveis.$espacamento-padrao;
+
+  &_paragrafo {
+    font-size: 16px;
+    margin-bottom: variaveis.$espacamento-metade;
+  }
+
+  &_link {
+    color: variaveis.$cor-primaria;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
