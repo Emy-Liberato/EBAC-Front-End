@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Criativa Web</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="assets/logotipo.png" alt="" />
+
+      <div class="header__hamburguer" aria-label="Abrir menu">
+        <i class="uil uil-bars"></i>
+      </div>
+
+      <nav class="menu">
+          <a class="menu__link" href="#home">Home</a>
+          <a class="menu__link" href="#sobre">Sobre Nós</a>
+          <a class="menu__link" href="#servicos">Serviços</a>
+          <a class="menu__link" href="#depoimentos">Depoimentos</a>
+          <a class="menu__link" href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section id="home" class="banner">
+      <img class="banner__image" src="assets/logobranca.png" alt="" />
+      <h1 class="banner__title">Bem-vindo à Agência Criativa Web</h1>
+      <p class="banner__subtitle">
+        Transformamos ideias em experiências memoráveis.
+      </p>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2 class="title">Sobre Nós</h2>
+      <p>
+        Na Agência Criativa, acreditamos no poder das boas ideias. Somos
+        apaixonados por design, movidos por inovação e guiados por resultados.
+        Nossa missão é ajudar marcas a se destacarem oferecendo soluções
+        criativas e estratégicas que fazem a diferença.
+      </p>
+      <br />
+      <ul class="sobre__list">
+        <li class="sobre__item">Criatividade com propósito</li>
+        <li class="sobre__item">Parcerias sólidas e transparentes</li>
+        <li class="sobre__item">Compromisso com a evolução constante</li>
+        <li class="sobre__item">Foco em resultados</li>
+      </ul>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <h2 class="title">Serviços</h2>
+      <div class="servicos__grid">
+        <div class="servicos__cards">
+          <h3 class="servicos__title">Design Gráfico</h3>
+          <p class="servicos__item-text">
+            Criação de identidade visual, materiais impressos e digitais,
+            embalagens, entre outros.
+          </p>
+        </div>
+        <div class="servicos__cards">
+          <h3 class="servicos__title">Desenvolvimento Web</h3>
+          <p class="servicos__text">
+            Sites completos e landing pages com foco na usabilidade e
+            performance
+          </p>
+        </div>
+        <div class="servicos__cards">
+          <h3 class="servicos__title">Branding</h3>
+          <p class="servicos__text">
+            Construção e gestão de marca, do naming ao posicionamento
+            estratégico.
+          </p>
+        </div>
+        <div class="servicos__cards">
+          <h3 class="servicos__title">Social Media</h3>
+          <p class="servicos__text">
+            Planejamento, criação e gestão de conteúdo para redes sociais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+      <h2 class="title">Depoimentos</h2>
+
+      <blockquote class="depoimentos__line">
+        <p>
+          "A Agência Criativa transformou a identidade visual da minha marca. O
+          resultado ficou além do que eu esperava!"
+        </p>
+        <cite class="depoimentos__client">Ana Souza – Empreendedora</cite>
+      </blockquote>
+
+      <blockquote class="depoimentos__line">
+        <p>
+          "Profissionais comprometidos e criativos. O site que criaram para
+          nossa empresa elevou nosso posicionamento no mercado."
+        </p>
+        <cite class="depoimentos__client"
+          >Lucas Ribeiro – Gerente de Marketing</cite
+        >
+      </blockquote>
+
+      <blockquote class="depoimentos__line">
+        <p>
+          "A equipe entendeu exatamente o que eu precisava para minhas redes.
+          Hoje minha presença online é muito mais profissional."
+        </p>
+        <cite class="depoimentos__client"
+          >Mariana Lima – Influencer Digital</cite
+        >
+      </blockquote>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2 class="title">Entre em contato</h2>
+      <p class="contato__text">Tem um projeto em mente? Fale conosco e peça um orçamento sob medida para o seu projeto!</p>
+      <form class="contato__form">
+        <label for="nome">Nome</label>
+        <input
+          class="contato__input"
+          type="text"
+          id="nome"
+          name="nome"
+          required
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          class="contato__input"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          class="contato__input"
+          id="mensagem"
+          name="mensagem"
+          rows="5"
+          required
+        ></textarea>
+
+        <button class="contato__button" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img class="footer__logo" src="assets/logo.png" alt="" />
+        <div class="footer__info">
+          <p>
+            <i class="uil uil-location-point"></i> Rua das Inovações, 123 – São
+            Paulo, SP
+          </p>
+          <p><i class="uil uil-phone"></i> (11) 91234-5678</p>
+          <p><i class="uil uil-envelope"></i> contato@agenciacriativa.com.br</p>
+        </div>
+      </div><br>
+      <span class="footer__copy"
+        >&copy; 2025 Agência Criativa. Todos os direitos reservados.</span
+      >
+    </footer>
+  </body>
+</html>
