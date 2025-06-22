@@ -1,0 +1,41 @@
+@use "mixins";
+@use "variaveis";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__logo {
+    width: 9.8rem;
+  }
+
+  &__hamburguer {
+    color: variaveis.$cor-branco;
+    cursor: pointer;
+
+    @media (min-width: 728px) {
+      & {
+        display: none;
+      }
+    }
+  }
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  gap: 1.5rem;
+
+  @media (min-width: 728px) {
+    & {
+      display: flex;
+    }
+  }
+
+  &__link {
+    color: variaveis.$cor-branco;
+    @include mixins.reset-list;
+  }
+}

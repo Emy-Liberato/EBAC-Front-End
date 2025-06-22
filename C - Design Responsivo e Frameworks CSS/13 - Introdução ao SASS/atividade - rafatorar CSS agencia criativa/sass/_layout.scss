@@ -1,0 +1,46 @@
+@use "variaveis";
+@use "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variaveis.$fonte-pricipal;
+  line-height: 1.6;
+  background-color: variaveis.$cor-branco;
+  color: variaveis.$cor-cinza-escuro;
+  overflow-x: hidden;
+
+  header {
+    background-color: variaveis.$cor-cinza-escuro;
+    padding: 1.5rem 3rem;
+  }
+
+  .title {
+    font-size: calc(variaveis.$espacamento-padrao * 2);
+    margin-bottom: variaveis.$espacamento-padrao;
+    color: variaveis.$cor-roxo-medio;
+  }
+
+  section {
+    padding: 4rem 2rem;
+
+    @media (min-width: 1024px) {
+      & {
+        margin: 0 auto;
+        padding: 4rem 10rem;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: variaveis.$cor-cinza-escuro;
+    color: variaveis.$cor-branco;
+    width: 100%;
+  }
+}
