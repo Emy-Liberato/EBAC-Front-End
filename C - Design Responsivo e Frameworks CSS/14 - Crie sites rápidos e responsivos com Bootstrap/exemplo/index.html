@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white">Eventos culturais</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Escreva algo"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- destaque -->
+    <header class="text-center bg-success text-white py-5">
+      <div class="container">
+        <h1 class="fw-bold">Participe dos melhores eventos culturais</h1>
+        <p>Shows, teatro, exposições e muito mais, em um só lugar.</p>
+      </div>
+    </header>
+
+    <!-- Eventos -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Próximos Eventos</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://placehold.co/600x400"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Show musical</h5>
+                <p class="card-text">
+                  Uma noite inesquecivel com a banda mais animdas da cidade!
+                  Local: Teatro Municipal
+                </p>
+                <a href="#" class="btn btn-success">Quero ir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://placehold.co/600x400"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Show musical</h5>
+                <p class="card-text">
+                  Uma noite inesquecivel com a banda mais animdas da cidade!
+                  Local: Teatro Municipal
+                </p>
+                <a href="#" class="btn btn-success">Quero ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://placehold.co/600x400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Show musical</h5>
+              <p class="card-text">
+                Uma noite inesquecivel com a banda mais animdas da cidade!
+                Local: Teatro Municipal
+              </p>
+              <a href="#" class="btn btn-success">Quero ir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de inscrição -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Garanta a sua vaga</h2>
+        <form action="">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="e-mail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="e-mail" />
+          </div>
+
+          <div class="mb-3">
+            <label for="evento" class="form-label">Selecione o Evento</label>
+            <select class="form-select">
+              <option>Show Musical</option>
+              <option>Exposição</option>
+              <option>Teatro</option>
+            </select>
+
+            <div>
+              <button class="btn btn-success w-100">Inscrever-se</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+     <footer class="bg-success text-white text-center py-5 mt-5">
+      <p>2042 Evento cultural - Todos os direitos reservados20</p>
+     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
