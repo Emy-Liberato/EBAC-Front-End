@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetStyle - Loja Virtual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-teal-500">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-white">PetStyle</h1>
+        <nav>
+          <ul class="flex gap-6 text-white">
+            <li><a href="#hero" class="hover:underline">Início</a></li>
+            <li><a href="#produtos" class="hover:underline">Produtos</a></li>
+            <li>
+              <a href="#depoimentos" class="hover:underline">Depoimentos</a>
+            </li>
+            <li><a href="#contato" class="hover:underline">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="bg-teal-100 py-12">
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-4"
+      >
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-4xl font-bold mb-4">
+            Tudo para seu pet viver com estilo!
+          </h2>
+          <p class="mb-6">
+            Camas, brinquedos e acessórios que seu pet vai amar.
+          </p>
+          <a
+            href="#produtos"
+            class="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600"
+            >Ver Produtos</a
+          >
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="assets/banner.jpg"
+            alt="Pet feliz"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">Nossos Produtos</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Produto 1 -->
+          <div class="border rounded-lg p-4 shadow hover:scale-105 transition">
+            <img
+              src="assets/oculos.png"
+              alt="Oculos pet"
+              class="rounded mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-2">Óculos</h4>
+            <p class="mb-2">
+              Seu pet com os acessório mais fofos que você vai ver.
+            </p>
+            <span class="font-bold text-teal-600">R$ 39,90</span>
+          </div>
+          <!-- Produto 2 -->
+          <div class="border rounded-lg p-4 shadow hover:scale-105 transition">
+            <img
+              src="assets/brinquedo.png"
+              alt="Brinquedo"
+              class="rounded mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-2">Brinquedo Personalizado</h4>
+            <p class="mb-2">
+              Escolha cor e o cheiro que o seu melhor amigos mais gosta.
+            </p>
+            <span class="font-bold text-teal-600">R$ 49,90</span>
+          </div>
+          <!-- Produto 3 -->
+          <div class="border rounded-lg p-4 shadow hover:scale-105 transition">
+            <img src="assets/touca.png" alt="touca" class="rounded mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Touca</h4>
+            <p class="mb-2">
+              Seu pet com os acessório mais fofos que você vai ver.
+            </p>
+            <span class="font-bold text-teal-600">R$ 59,90</span>
+          </div>
+          <!-- Produto 4 -->
+          <div class="border rounded-lg p-4 shadow hover:scale-105 transition">
+            <img
+              src="assets/roupinha.png"
+              alt="roupinha"
+              class="rounded mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-2">Roupinhas</h4>
+            <p class="mb-2">
+              Seu pet sempre na moda com os mais novos lançamento!
+            </p>
+            <span class="font-bold text-teal-600">R$ 89,90</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="bg-teal-50 py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">
+          O que dizem nossos clientes
+        </h3>
+        <div class="flex flex-col md:flex-row gap-8 justify-center">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p>
+              "Adorei a touca! Meu cachorro amou, pede para colocar o tempo
+              todo"
+            </p>
+            <span class="block mt-4 font-semibold">— Ana Paula</span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p>"Produtos de ótima qualidade, entrega super rápida."</p>
+            <span class="block mt-4 font-semibold">— Lucas Martins</span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p>"Recomendo muito! Meu cachorro ficou lindo com a roupinha."</p>
+            <span class="block mt-4 font-semibold">— Carla Souza</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <!-- Contato -->
+    <section id="contato" class="py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">Fale Conosco</h3>
+        <div class="flex flex-col gap-8 items-center">
+          <!-- Informações -->
+          <div class="w-full max-w-xl">
+            <p class="mb-2"><strong>Email:</strong> contato@petstyle.com.br</p>
+            <p class="mb-6"><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p>
+              Estamos aqui para ajudar você e seu pet. Entre em contato e tire
+              suas dúvidas!
+            </p>
+          </div>
+
+          <!-- Formulário -->
+          <div class="w-full max-w-xl">
+            <form class="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Seu nome"
+                class="border p-3 rounded-md w-full"
+              />
+              <input
+                type="email"
+                placeholder="Seu e-mail"
+                class="border p-3 rounded-md w-full"
+              />
+              <textarea
+                rows="4"
+                placeholder="Sua mensagem"
+                class="border p-3 rounded-md w-full"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-teal-500 text-white px-6 py-3 rounded-md hover:bg-teal-600 transition w-full md:w-auto self-center"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-500 text-white text-center p-4">
+      <p>&copy; 2025 PetStyle - Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
